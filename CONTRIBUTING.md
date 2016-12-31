@@ -8,12 +8,12 @@ you prefer. But if you're looking for instructions, here are my suggestions:
 
 If you want to contribute a bug report or feature request to Terminal Velocity,
 use
-[GitHub Issues](https://github.com/seanh/terminal_velocity/issues?state=open).
+[GitHub Issues](https://github.com/vhp/terminal_velocity/issues?state=open).
 
 If you want to contribute documentation, for example to explain how to combine
 Terminal Velocity with an external tool that handles something like note
 synchronisation or encryption, use
-[the wiki](https://github.com/seanh/terminal_velocity/wiki).
+[the wiki](https://github.com/vhp/terminal_velocity/wiki).
 
 If you want to contribute code to Terminal Velocity: create your own GitHub
 account, fork Terminal Velocity, create a new bugfix or feature branch and
@@ -21,7 +21,7 @@ commit your code to it, push your branch to your Terminal Velocity fork on
 GitHub, then send me a pull request asking me to pull your feature branch into
 my master branch. In detail:
 
-1. [Install the Terminal Velocity development version](https://github.com/seanh/terminal_velocity/blob/master/CONTRIBUTING.md#how-to-install-the-terminal-velocity-development-version).
+1. [Install the Terminal Velocity development version](https://github.com/vhp/terminal_velocity/blob/master/CONTRIBUTING.md#how-to-install-the-terminal-velocity-development-version).
 
 2. Checkout a new branch, forked from the master branch, e.g.
    `git checkout -b my-new-feature`. _Don't commit on the master branch_,
@@ -79,7 +79,7 @@ Velocity and its dependences into the virtualenv, for example:
     (terminal_velocity) $ mkdir -p ~/Projects/terminal_velocity
     (terminal_velocity) $ cd ~/Projects/terminal_velocity
     (terminal_velocity) $ setvirtualenvproject
-    (terminal_velocity) $ git clone https://github.com/seanh/terminal_velocity.git
+    (terminal_velocity) $ git clone https://github.com/vhp/terminal_velocity.git
     (terminal_velocity) $ cd terminal_velocity
     (terminal_velocity) $ python setup.py develop
     (terminal_velocity) $ deactivate

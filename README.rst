@@ -1,7 +1,3 @@
-**This is my unmaintained archived copy of Terminal Velocity**.
-
-Development has moved to Vincent Perricone's fork, you should use this instead: https://github.com/vhp/terminal_velocity
-
 Terminal Velocity
 =================
 
@@ -11,7 +7,7 @@ focuses on letting you create or find a note as quickly and easily as possible,
 then uses your ``$EDITOR`` to open and edit the note. It is heavily inspired
 by the OS X app `Notational Velocity <http://notational.net/>`_.
 For screenshots and features, see the
-`Terminal Velocity website <http://seanh.github.com/terminal_velocity>`_.
+`Terminal Velocity website <http://vhp.github.com/terminal_velocity>`_.
 
 To install Terminal Velocity, run::
 
@@ -39,12 +35,12 @@ To uninstall it, run::
 
     pip uninstall terminal_velocity
 
-To make a bug report or feature request, use `GitHub Issues <https://github.com/seanh/terminal_velocity/issues>`_.
+To make a bug report or feature request, use `GitHub Issues <https://github.com/vhp/terminal_velocity/issues>`_.
 
-To contribute documentation, use `the wiki <https://github.com/seanh/terminal_velocity/wiki>`_.
+To contribute documentation, use `the wiki <https://github.com/vhp/terminal_velocity/wiki>`_.
 
 To contribute code to Terminal Velocity, see
-`CONTRIBUTING <https://github.com/seanh/terminal_velocity/blob/master/CONTRIBUTING.md#contributing-to-terminal-velocity>`_.
+`CONTRIBUTING <https://github.com/vhp/terminal_velocity/blob/master/CONTRIBUTING.md#contributing-to-terminal-velocity>`_.
 
 
 Hacking
