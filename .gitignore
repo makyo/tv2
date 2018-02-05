@@ -4,3 +4,5 @@
 MANIFEST
 dist/*
 terminal_velocity.egg-info/
+build
+build/*

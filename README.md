@@ -41,7 +41,7 @@ To uninstall it, run:
 Ensure python modules `urwid`, `setuptools`  and `chardet` are installed. Python-dev also.
 
 ```
-	apt install python-setuptools python-chardet python-urwid python-dev
+apt install python-setuptools python-chardet python-urwid python-dev
 ```
 
 Clone the repository from:
