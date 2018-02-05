@@ -9,7 +9,7 @@ setup(
     url="http://vhp.github.com/terminal_velocity/",
     license="GNU General Public License, Version 3",
     description="A fast note-taking app for the UNIX terminal",
-    long_description=open("README.rst").read(),
+    long_description=open("README.md").read(),
     install_requires=[
         "urwid==1.1.1",
         "chardet==2.1.1",
