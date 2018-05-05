@@ -3,6 +3,7 @@
 Implemented using the console user interface library urwid.
 
 """
+import sys
 import subprocess
 import shlex
 import pipes
@@ -28,7 +29,7 @@ def system(cmd, loop):
     loop.screen.stop()
 
     cmd = u"{0}".format(cmd)
-    cmd = cmd.encode("utf-8")  # FIXME: Correct encoding?
+    cmd = cmd.encode(sys.getfilesystemencoding())  # FIXME: Correct encoding?
     safe_cmd = shlex.split(cmd)
 
     logger.debug("System command: {0}".format(safe_cmd))
@@ -435,6 +436,8 @@ class MainFrame(urwid.Frame):
 
 def launch(notes_dir, editor, extension, extensions, exclude=None):
     """Launch the user interface."""
+
+    urwid.set_encoding(sys.getfilesystemencoding())
 
     frame = MainFrame(notes_dir, editor, extension, extensions, exclude=exclude)
     loop = urwid.MainLoop(frame, palette)
