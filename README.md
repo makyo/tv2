@@ -1,5 +1,12 @@
 # Terminal Velocity
 
+Terminal Velocity is currently in maintenance mode. Python pip installs are 
+still supported and the software is stable for day to day use with python 2. 
+The software is being moved into maintenance mode because both authors 
+no longer use terminal_velocity. Life happens and finding the time to maintain 
+it is difficult. We hope you understand. 
+
+
 Terminal Velocity is a fast note-taking app for the UNIX terminal, that
 focuses on letting you create or find a note as quickly and easily as
 possible, then uses your `$EDITOR` to open and edit the note. It is
