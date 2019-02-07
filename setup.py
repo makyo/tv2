@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="tv2",
-    version="0.2.2",
+    version="0.2.2-1",
     author="Sean Hammond, Vincent Perricone, Madison Scott-Clary",
     packages=["tv2"],
     scripts=["bin/tv2"],
