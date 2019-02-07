@@ -6,6 +6,8 @@ tv2 is a fast, cross-platform note-taking application for the UNIX terminal,
 it's a clone of the OS X app [Notational Velocity](http://notational.net/) and
 successor to Terminal Velocity that runs in a terminal and uses your $EDITOR.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cY8gftWly-g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Install
 
 To install tv2, run:
