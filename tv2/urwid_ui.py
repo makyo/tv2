@@ -11,7 +11,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 import urwid
-import notebook
+from . import notebook
 
 
 palette = [
@@ -28,8 +28,7 @@ def system(cmd, loop):
 
     loop.screen.stop()
 
-    cmd = u"{0}".format(cmd)
-    cmd = cmd.encode(sys.getfilesystemencoding())  # FIXME: Correct encoding?
+    cmd = "{0}".format(cmd)
     safe_cmd = shlex.split(cmd)
 
     logger.debug("System command: {0}".format(safe_cmd))
@@ -40,7 +39,7 @@ def system(cmd, loop):
         logger.exception(e)
         raise e
 
-    loop.screen.start()
+    loop.start()
     return returncode
 
 
@@ -115,7 +114,7 @@ class AutocompleteWidget(urwid.Edit):
 
         # When search bar is empty show placeholder text.
         if not self.edit_text and not self.autocomplete_text:
-            placeholder_text = u"Find or Create"
+            placeholder_text = "Find or Create"
             return (placeholder_text,
                     [("placeholder", len(placeholder_text))])
 
@@ -187,7 +186,7 @@ class NoteFilterListBox(urwid.ListBox):
 
     def render(self, size, focus=False):
         if len(self.list_walker) == 0:
-            placeholder = placeholder_text(u"No matching notes, press Enter "
+            placeholder = placeholder_text("No matching notes, press Enter "
                 "to create a new note")
             return placeholder.render(size)
         return super(NoteFilterListBox, self).render(size, self.fake_focus)
@@ -399,7 +398,7 @@ class MainFrame(urwid.Frame):
         # If the user has no notes yet show some placeholder text, otherwise
         # show the note list.
         if len(self.notebook) == 0:
-            self.body = placeholder_text(u"You have no notes yet, to create "
+            self.body = placeholder_text("You have no notes yet, to create "
                 "a note type a note title then press Enter")
         else:
             self.body = urwid.Padding(self.list_box, left=1, right=1)

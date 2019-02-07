@@ -2,13 +2,13 @@
 """A fast note-taking app for the UNIX terminal"""
 
 import argparse
-import ConfigParser
+import configparser
 import os
 import logging
 import logging.handlers
 import sys
 
-import terminal_velocity.urwid_ui as urwid_ui
+import tv2.urwid_ui as urwid_ui
 
 
 def main():
@@ -22,7 +22,7 @@ def main():
 
     # Parse the config file.
     config_file = os.path.abspath(os.path.expanduser(args.config))
-    config = ConfigParser.SafeConfigParser()
+    config = configparser.SafeConfigParser()
     config.read(config_file)
     defaults = dict(config.items('DEFAULT'))
 
@@ -96,10 +96,10 @@ the default default will be used"""
     args.exclude = exclude
 
     if args.print_config:
-        print args
+        print(args)
         sys.exit()
 
-    logger = logging.getLogger("terminal_velocity")
+    logger = logging.getLogger("tv2")
     # Send all messages to handlers, let them decide.
     logger.setLevel(logging.DEBUG)
     fh = logging.handlers.RotatingFileHandler(

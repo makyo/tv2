@@ -1,3 +1,5 @@
+0.2.0, 6th January 2019
+    - Fork project, update for py3
 0.1.10, 20th November 2017
     - Bug fix for note name escaping (contributed by immae)
 0.1.9, 19th December 2016
