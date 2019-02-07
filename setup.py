@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="tv2",
-    version="0.2.0",
+    version="0.2.1",
     author="Sean Hammond, Vincent Perricone, Madison Scott-Clary",
     packages=["tv2"],
     scripts=["bin/tv2"],
@@ -15,8 +15,6 @@ setup(
         "chardet==3.0.4",
         ],
     classifiers=[
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.6',
         ],

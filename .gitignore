@@ -3,7 +3,7 @@
 *~
 MANIFEST
 dist/*
-terminal_velocity.egg-info/
+tv2.egg-info/
 build
 build/*
 venv
