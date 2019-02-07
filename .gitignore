@@ -7,3 +7,6 @@ tv2.egg-info/
 build
 build/*
 venv
+_site
+.bundle
+.sass-cache
