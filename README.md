@@ -47,6 +47,8 @@ Move into tv2 directory you just cloned and run the following:
 
     sudo python setup.py install
 
+## Contributing
+
 To contribute code to Terminal Velocity, see
-[CONTRIBUTING](https://github.com/makyo/tv2/blob/master/CONTRIBUTING.md#contributing-to-terminal-velocity).
+[CONTRIBUTING](/CONTRIBUTING.md#contributing-to-terminal-velocity).
 
