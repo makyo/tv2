@@ -1,13 +1,13 @@
-# Terminal Velocity 2
+# tv2 - Terminal Velocity 2
 
-Terminal Velocity 2 is a fast note-taking app for the UNIX terminal, that focuses on letting you create or find a note as quickly and easily as possible, then uses your `$EDITOR` to open and edit the note. It is heavily inspired by the OS X app [Notational Velocity](http://notational.net/). For screenshots and features, see the [Terminal Velocity website](https://github.com/terminal-velocity-notes/terminal_velocity).
+tv2 is a fast note-taking app for the UNIX terminal, that focuses on letting you create or find a note as quickly and easily as possible, then uses your `$EDITOR` to open and edit the note. It is heavily inspired by the OS X app [Notational Velocity](http://notational.net/). For screenshots and features, see the [Terminal Velocity website](https://github.com/terminal-velocity-notes/terminal_velocity).
 
 ## Installation
 
 ### pip - Python package manager
 To install Terminal Velocity, run:
 
-    pip install tv2
+    pip3 install tv2
 
 Then to launch it just run:
 
@@ -19,11 +19,11 @@ To use a different notes directory, run:
 
 To see all the command-line options, run:
 
-    terminal_velocity -h
+    tv2 -h
 
 To quit the app, press `ctrl-c` or `ctrl-x`.
 
-To upgrade Terminal Velocity to the latest version, run:
+To upgrade tv2 to the latest version, run:
 
     pip install --upgrade tv2
 
