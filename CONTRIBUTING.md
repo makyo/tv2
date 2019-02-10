@@ -17,7 +17,7 @@ your branch to your tv2 fork on GitHub, then send a pull request asking to
 merge your feature branch into my master branch. In detail:
 
 1. [Install the tv2 development
-version](d#how-to-install-the-terminal-velocity-2-development-version).
+version](#how-to-install-the-tv2-development-version).
 
 2. Checkout a new branch, forked from the master branch, e.g.  `git checkout -b
 my-new-feature`. _Don't commit on the master branch_, instead develop each
