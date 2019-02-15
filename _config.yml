@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: tv2
-email: makyo+tv2@drab-makyo.com.com
+email: makyo+tv2@drab-makyo.com
 description: >- # this means to ignore newlines until "baseurl:"
   tv2 is a fast note-taking app for the terminal.
 baseurl: "" # the subpath of your site, e.g. /blog

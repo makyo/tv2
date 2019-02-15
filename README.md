@@ -1,6 +1,6 @@
 # tv2 - Terminal Velocity 2
 
-tv2 is a fast note-taking app for the UNIX terminal, that focuses on letting you create or find a note as quickly and easily as possible, then uses your `$EDITOR` to open and edit the note. It is heavily inspired by the OS X app [Notational Velocity](http://notational.net/). For screenshots and features, see the [Terminal Velocity website](https://github.com/terminal-velocity-notes/terminal_velocity).
+tv2 is a fast note-taking app for the UNIX terminal, that focuses on letting you create or find a note as quickly and easily as possible, then uses your `$EDITOR` to open and edit the note. It is heavily inspired by the OS X app [Notational Velocity](http://notational.net/). For screenshots and features, see the [Terminal Velocity website](https://tv2.projects.makyo.io).
 
 ## Installation
 
