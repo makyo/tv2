@@ -33,6 +33,7 @@ the config file can be used to override the defaults for the optional
 arguments, example config file contents:
 
     [DEFAULT]
+    # The above line is required!
     editor = vim
     # The filename extension to use for new files.
     extension = .txt

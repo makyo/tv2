@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="tv2",
-    version="0.2.3",
+    version="0.2.4",
     author="Sean Hammond, Vincent Perricone, Madison Scott-Clary",
     author_email='makyo+tv2@drab-makyo.com',
     packages=["tv2"],
