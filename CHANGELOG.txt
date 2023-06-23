@@ -1,3 +1,5 @@
+0.2.5, 23th June 2023
+    - Bug fix and search support for subdirectories
 0.2.2, 7th February 2019
     - Docs update
 0.2.1, 6th January 2019
