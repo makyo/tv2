@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="tv2",
-    version="0.2.4",
+    version="0.2.5",
     author="Sean Hammond, Vincent Perricone, Madison Scott-Clary",
     author_email='makyo+tv2@drab-makyo.com',
     packages=["tv2"],
@@ -24,7 +24,6 @@ setup(
         'Natural Language :: English',
         'Operating System :: MacOS',
         'Operating System :: POSIX',
-        'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 3',
         ],
     )
