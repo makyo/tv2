@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 
 import urwid
 from . import notebook
-
+from pathlib import Path
 
 palette = [
     ("placeholder", "dark blue", "default"),
@@ -56,7 +56,8 @@ class NoteWidget(urwid.Text):
 
     def __init__(self, note):
         self.note = note
-        return super(NoteWidget, self).__init__(note.title)
+        title = note.dir + '/' + note.title if note.dir and note.dir != '.' else note.title
+        return super(NoteWidget, self).__init__(title)
 
     def selectable(self):
         return True
@@ -281,7 +282,7 @@ class MainFrame(urwid.Frame):
 
         if note:
 
-            self.search_box.autocomplete_text = note.title
+            self.search_box.autocomplete_text = note.dir + '/' + note.title if note.dir and note.dir != '.' else note.title
 
             # Focus the list box so the focused note will look selected.
             self.list_box.fake_focus = True
@@ -327,7 +328,11 @@ class MainFrame(urwid.Frame):
             else:
                 if self.search_box.edit_text:
                     try:
-                        note = self.notebook.add_new(self.search_box.edit_text)
+                        path = Path(self.search_box.edit_text)
+                        title = path.stem
+                        ext = path.suffix if path.suffix else None
+                        subdir = path.parent if path.parent else ''
+                        note = self.notebook.add_new(title, ext, subdir)
                         system(self.editor + ' ' + pipes.quote(note.abspath), self.loop)
                     except notebook.NoteAlreadyExistsError:
                         # Try to open the existing note instead.
@@ -374,7 +379,9 @@ class MainFrame(urwid.Frame):
                 if self.search_box.edit_text == "":
                     consume = True
                 else:
-                    title = self.selected_note.title.lower()
+                    note = self.selected_note
+                    title = note.dir + '/' + note.title if note.dir and note.dir != '.' else note.title
+                    title = title.lower()
                     typed = self.search_box.edit_text.lower()
                     if not title.startswith(typed):
                         consume = True
@@ -417,7 +424,8 @@ class MainFrame(urwid.Frame):
         autocompletable_matches = []
         if query:
             for note in matching_notes:
-                if note.title.lower().startswith(query.lower()):
+                title = note.dir + '/' + note.title if note.dir and note.dir != '.' else note.title
+                if title.lower().startswith(query.lower()):
                     autocompletable_matches.append(note)
 
         # Select the first autocompletable note.
