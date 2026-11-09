@@ -13,7 +13,7 @@ setup(
     long_description=open("README.md").read(),
     long_description_content_type='text/markdown',
     install_requires=[
-        "urwid==2.0.1",
+        "urwid==4.0.7",
         "chardet==3.0.4",
         "six==1.12.0",
         ],
